@@ -293,3 +293,31 @@ ul {
     height: 44px;
     width: 44px;
 }
+
+#mySkills {
+    display: none;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #sideBar {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #sideBar {
+        display: none;
+    }
+
+    #aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMeRight {
+        order: 1;
+    }
+
+    .aboutMeLeft {
+        order: 2;
+    }
+}
