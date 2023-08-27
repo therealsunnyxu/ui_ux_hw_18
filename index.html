@@ -4,15 +4,16 @@
 <head>
     <title>Sunny Xu</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
         <div id="headerInner">
-            <div class="icon">
+            <a class="icon" href="index.html">
                 <img src="images/logo44.png" alt="Icon of Sunny Xu's Portfolio">
                 <p>Sunny Xu</p>
-            </div>
+            </a>
             <nav class="headerNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,14 +21,23 @@
                     <li><a href="#">Contact Me</a></li>
                 </ul>
             </nav>
+            <div id="headerNavBurger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
+                        fill="white" />
+                </svg>
+            </div>
         </div>
     </header>
     <section id="pageContent">
         <section id="pageContentInner">
             <nav id="sideBar">
                 <ul>
+                    <li class="primaryNavHeader">Home</li>
                     <li><a href="#aboutMe">About Me</a></li>
+                    <!--
                     <li><a href="#mySkills">My Skills</a></li>
+                    -->
                     <li><a href="#myWork">My Work</a></li>
                     <li><a href="#contactMe">Contact Me</a></li>
                 </ul>
@@ -48,6 +58,7 @@
                         </div>
                     </div>
                 </section>
+                <!--
                 <hr>
                 <section id="mySkills">
                     <h2>My Skills</h2>
@@ -83,6 +94,7 @@
                         </ul>
                     </div>
                 </section>
+                -->
                 <hr>
                 <section id="myWork">
                     <h2>My Work</h2>
@@ -123,7 +135,7 @@
                             <div class="fanciLiInside">
                                 <p class="tinyText">Email me:</p>
                                 <p><a href="mailto://therealsunnyxu@gmail.com"
-                                        target="_blank">therealsunnyxu@gmail.com</a>
+                                        target="_blank"><u>therealsunnyxu@gmail.com</u></a>
                                 </p>
                             </div>
                         </div>
@@ -132,7 +144,7 @@
                             <div class="fanciLiInside">
                                 <p class="tinyText">Chat with me on LinkedIn:</p>
                                 <p><a href="https://linkedin.com/in/the-real-sunny-xu"
-                                        target="_blank">linkedin.com/in/the-real-sunny-xu</a></p>
+                                        target="_blank"><u>the-real-sunny-xu</a></u></p>
                             </div>
 
                         </div>
@@ -143,7 +155,7 @@
     </section>
     <footer>
         <div id="footerInner">
-            <nav class="footerNav">
+            <nav class="footerNav" id="footerLinks">
                 <ul>
                     <li class="primaryNavHeader">Quick Links</li>
                     <li><a href="index.html">Home</a></li>
@@ -151,20 +163,21 @@
                     <li><a href="#">Contact Me</a></li>
                 </ul>
             </nav>
-            <nav class="footerNav">
+            <nav class="footerNav" id="footerContact">
                 <ul>
                     <li class="primaryNavHeader">Contact Info</li>
-                    <li>(415) 259-8670</li>
-                    <li><a href="mailto://therealsunnyxu@gmail.com" target="_blank">therealsunnyxu@gmail.com</a></li>
-                    <li><a href="https://linkedin.com/in/the-real-sunny-xu"
-                            target="_blank">linkedin.com/in/the-real-sunny-xu</a></li>
+                    <li><img src="images/phone24white.png">(415) 259-8670</li>
+                    <li><img src="images/email24white.png"><a href="mailto://therealsunnyxu@gmail.com"
+                            target="_blank"><u>therealsunnyxu@gmail.com</u></a></li>
+                    <li><img src="images/linkedin24white.png"><a href="https://linkedin.com/in/the-real-sunny-xu"
+                            target="_blank"><u>the-real-sunny-xu</u></a></li>
                 </ul>
             </nav>
             <div class="footerRight">
-                <div class="icon">
+                <a class="icon" href="index.html">
                     <img src="images/logo44.png" alt="Icon of Sunny Xu's Portfolio">
                     <p>Sunny Xu</p>
-                </div>
+                </a>
                 <div id="footerCopyright">
                     <p class="tinyText">Sunny Xu © 2023</p>
                 </div>

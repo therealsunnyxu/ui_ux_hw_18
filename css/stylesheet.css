@@ -6,7 +6,6 @@ h1,
 h2,
 h3,
 p,
-a,
 li {
     color: black;
 }
@@ -61,6 +60,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .headerNav li,
 .icon p,
 .footerNav li,
@@ -68,7 +71,11 @@ a {
 .footerNav a,
 #footerCopyright p,
 a.fakeButton {
-    color: #fff;
+    color: white;
+}
+
+.fancyLi a {
+    color: black;
 }
 
 .icon p {
@@ -185,18 +192,24 @@ ul {
     margin: 16px;
 }
 
-#pageContentInner {
-    align-self: flex-start;
-    padding-top: 64px;
+li {
+    display: flex;
+    gap: 16px;
 }
 
 #pageContentInner {
+    align-self: flex-start;
+    padding-top: 64px;
     display: flex;
     width: 1024px;
     align-items: flex-start;
 }
 
 #sideBar {
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
     width: 192px;
     padding: 16px;
 }
@@ -294,30 +307,53 @@ ul {
     width: 44px;
 }
 
-#mySkills {
-    display: none;
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-    #sideBar {
-        display: none;
-    }
-}
-
-@media (max-width: 481px) {
-    #sideBar {
-        display: none;
-    }
-
+@media (max-width: 1024px) {
     #aboutMe {
         flex-direction: column;
     }
 
     .aboutMeRight {
         order: 1;
+        align-self: center;
     }
 
     .aboutMeLeft {
         order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    #sideBar {
+        display: none;
+    }
+
+    #footerInner #footerLinks {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    #headerInner .headerNav {
+        display: none;
+    }
+
+    #headerInner {
+        justify-content: space-between;
+    }
+
+    #headerNavBurger {
+        display: inline;
+    }
+
+    #footerInner {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 501px) {
+    #headerNavBurger {
+        display: none;
     }
 }
